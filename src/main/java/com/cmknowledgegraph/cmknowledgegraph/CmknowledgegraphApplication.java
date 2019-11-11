@@ -1,0 +1,13 @@
+package com.cmknowledgegraph.cmknowledgegraph;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CmknowledgegraphApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CmknowledgegraphApplication.class, args);
+    }
+
+}
