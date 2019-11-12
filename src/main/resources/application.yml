@@ -1,0 +1,22 @@
+spring:
+  #   远程服务器mysql
+  #  datasource:
+  #    url: jdbc:mysql://114.55.37.70:3306/springboot1111
+  #    username: root
+  #    password: XBxb0525@
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #   本地mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: xbxb0525@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+
+
