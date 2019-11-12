@@ -110,7 +110,7 @@ public class UserPersonalController {
             user.setUsername(username);
             user.setAge(age);
             user.setSex(sex);
-            
+
             userRepository.save(user);
 
             returnData.setMsg(LoginRegisterSuccess);
