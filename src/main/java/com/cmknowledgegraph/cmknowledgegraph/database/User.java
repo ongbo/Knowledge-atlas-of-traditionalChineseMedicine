@@ -1,7 +1,10 @@
 package com.cmknowledgegraph.cmknowledgegraph.database;
 
 import javax.persistence.*;
-
+/*
+* 这个Entity映射的是用户的简单信息
+*
+* */
 @Entity(name = "user")
 @Table(name = "user")
 public class User {

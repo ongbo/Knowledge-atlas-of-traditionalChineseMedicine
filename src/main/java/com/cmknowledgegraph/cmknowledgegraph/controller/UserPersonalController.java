@@ -75,7 +75,7 @@ public class UserPersonalController {
     @PostMapping("/register")
     @ResponseBody
     public ReturnData isRegister(@RequestParam("phonenumber") String phonenumber,@RequestParam("username") String username, @RequestParam("password") String password,
-                        @RequestParam("age") Long age, @RequestParam("sex") String sex){
+                        @RequestParam("age") Long age, @RequestParam("sex") String sex,@RequestParam("avatar_url") String avatar_url){
         ReturnData returnData = new ReturnData();
         //先检查手机号
         if(phonenumber.length()!=11) {
@@ -110,6 +110,7 @@ public class UserPersonalController {
             user.setUsername(username);
             user.setAge(age);
             user.setSex(sex);
+            user.setAvatar_url(avatar_url);
 
             userRepository.save(user);
 

@@ -23,12 +23,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <!--            移除内嵌的tomcat,方便弄到外部的tomcat-->
-            <!--            <exclusions>-->
-            <!--                <exclusion>-->
-            <!--                    <groupId>org.springframework.boot</groupId>-->
-            <!--                    <artifactId>spring-boot-starter-tomcat</artifactId>-->
-            <!--                </exclusion>-->
-            <!--            </exclusions>-->
+<!--                        <exclusions>-->
+<!--                            <exclusion>-->
+<!--                                <groupId>org.springframework.boot</groupId>-->
+<!--                                <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--                            </exclusion>-->
+<!--                        </exclusions>-->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -70,6 +70,17 @@
             <artifactId>tomcat-embed-jasper</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
         <!--数据库支持-->
         <dependency>
             <groupId>mysql</groupId>
@@ -77,6 +88,12 @@
             <version>8.0.15</version>
         </dependency>
     </dependencies>
+        <!-- HaNLP自然语言处理支持 -->
+    <dependency>
+        <groupId>com.hankcs</groupId>
+        <artifactId>hanlp</artifactId>
+        <version>portable-1.7.5</version>
+    </dependency>
 
     <build>
         <finalName>CMKnowledgeGraph</finalName>
